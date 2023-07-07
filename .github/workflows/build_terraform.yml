@@ -1,11 +1,14 @@
 name: Terraform img builder
 
 on:
-  workflow_dispatch:
+  #workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   terraform:
     uses: GithubActionsPrueba2/repoPrueba2/.github/workflows/terraform.yml@main
-    with:
-      awsRegion: "eu-west-3"
+    # with:
+    #   awsRegion: eu-west-3
     secrets: inherit
