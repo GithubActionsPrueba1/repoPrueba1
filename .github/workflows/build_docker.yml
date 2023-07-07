@@ -1,4 +1,4 @@
-name: Reusable Workflow user
+name: Docker img builder
 
 on:
   workflow_dispatch:
