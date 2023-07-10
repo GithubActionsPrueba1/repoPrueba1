@@ -7,6 +7,13 @@ on:
       - main
 
 jobs:
+  do-it:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
   terraform:
     uses: GithubActionsPrueba2/repoPrueba2/.github/workflows/terraform.yml@main
     # with:
