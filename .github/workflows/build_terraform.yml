@@ -18,6 +18,4 @@ jobs:
     uses: GithubActionsPrueba2/repoPrueba2/.github/workflows/terraform.yml@main
     # with:
     #   awsRegion: eu-west-3
-    secrets: #inherit
-      access_key: ${{secrets.ACCESS_KEY_AWS}}
-      secret_key: ${{secrets.SECRET_KEY_AWS}}
+    secrets: inherit
